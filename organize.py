@@ -29,7 +29,7 @@ def organize_by_extension(folder_path):
         shutil.move(full_path, dest_path)
         print(f"Moved {filename} → {ext_folder}/")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     path = input("Enter the full folder path you want to organize:\n").strip()
     organize_by_extension(path)
     print("Organization complete.")
